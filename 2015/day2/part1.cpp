@@ -20,14 +20,11 @@ int main(void) {
     smallest = min(smallest, h * l);
 
     // part 2
-    perims.push_back(l);
-    perims.push_back(w);
-    perims.push_back(h);
-    sort(perims.begin(), perims.end());
-    int wrap = perims[0] * 2 + perims[1] * 2;
+    int smallest2 = min(l * 2 + w * 2, w * 2 + h * 2);
+    smallest2 = min(smallest2, h * 2 + l * 2);
     int bow = l * w * h;
 
-    ribbon += wrap + bow;
+    ribbon += smallest2 + bow;
     total += sa + smallest;
     // cout << sa + smallest << endl;
   }
