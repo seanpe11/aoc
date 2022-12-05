@@ -13,42 +13,42 @@ int main(void) {
 
   while (scanf("%c %c\n", &you, &me) == 2) {
     if (me == 'X') {
-      score += 1;
+      score += 0;
       switch (you) {
-      case 'A':
-        score += 3;
+      case 'A':     // rock
+        score += 3; // scissors
         break;
-      case 'B':
-        score += 0;
+      case 'B':     // paper
+        score += 1; // rock
         break;
-      case 'C':
-        score += 6;
+      case 'C':     // scissors
+        score += 2; // paper
         break;
       }
     } else if (me == 'Y') {
-      score += 2;
+      score += 3;
       switch (you) {
-      case 'A':
-        score += 6;
+      case 'A':     // rock
+        score += 1; // rock
         break;
-      case 'B':
-        score += 3;
+      case 'B':     // paper
+        score += 2; // paper
         break;
-      case 'C':
-        score += 0;
+      case 'C':     // scissors
+        score += 3; // scissors
         break;
       }
     } else if (me == 'Z') {
-      score += 3;
+      score += 6;
       switch (you) {
-      case 'A':
-        score += 0;
+      case 'A':     // rock
+        score += 2; // paper
         break;
-      case 'B':
-        score += 6;
+      case 'B':     // paper
+        score += 3; // scissors
         break;
-      case 'C':
-        score += 3;
+      case 'C':     // scissors
+        score += 1; // rock
         break;
       }
     }
