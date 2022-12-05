@@ -5,6 +5,10 @@
 #include <vector>
 using namespace std;
 
+// use vectors instead of stacks
+// find the first element and then just iterate the rest of the amounts into the
+// new vector
+
 int main(void) {
   map<int, vector<char>> stacks;
   map<int, int> heads;

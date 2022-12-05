@@ -5,6 +5,9 @@
 #include <vector>
 using namespace std;
 
+// simple stack solution
+// read input into stacks, then just follow operations as stacks
+
 int main(void) {
   map<int, stack<char>> stacks;
   map<int, vector<char>> stackInput;
